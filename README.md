@@ -1,12 +1,12 @@
+<p align="center">
+  <img src="Documentation/Images/bypass-icon.png"/>
+</p>
+
+[![Itch.io](https://img.shields.io/badge/itch.io-FA5C5C.svg?logo=Itch.io&logoColor=white)](https://javier-games.itch.io/bypass-api)
+
 # Bypass API
 
-![Build status](https://github.com/javier-games/bypass-api/actions/workflows/ci.yml/badge.svg)
-[![App Store](https://img.shields.io/badge/test_flight-available-blue.svg?logo=apple)](https://testflight.apple.com/join/0gP0Qmic)
-[![Donate](https://img.shields.io/badge/support-available-blue.svg?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=QY4PCGA8FMCC4)
-
-![bypass-icon.png](Documentation/Images/bypass-icon.png)
-
-The Bypass API is an innovative app designed to streamline the creation and usage of requests right from your hand. It features a user-friendly setup, allowing users to effortlessly send requests and receive responses. Notably, it also provides integration with Apple's Shortcuts app, enhancing its functionality and user convenience.
+Open source project for iOS that allows users to effortlessly send requests and receive responses with integration with Apple's Shortcuts app.
 
 ## Features
 
@@ -34,6 +34,8 @@ Integration with Shortcuts app.
 3. Input the name of the request you wish to run.
 4. Press 'Run'. A text response will be displayed containing the results of your request.
 
+[![Video](https://img.shields.io/badge/Watch_Video-FA5C5C.svg)](https://itch.io/embed-upload/11860138)
+
 ## Requirements
 
 - Xcode 14.2+
@@ -46,7 +48,7 @@ Note: An account enrolled to the Apple Developer program is required to use the 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/javier-games/bypass-api.git
+git clone https://github.com/javier-games/app-bypass-api.git
 ```
 
 2. Open the project in Xcode:
@@ -69,8 +71,4 @@ Please read our [Contributing Guide](CONTRIBUTING.md) before submitting a Pull R
 
 ## Support
 
-For any questions or issues regarding the App usage please visit our [support](SUPPORT.md) page, also feel free to open a [new issue](https://github.com/javier-games/bypass-api/issues/new) on this repository for app usage and the Xcode project issues.
-
-## Donations
-
-Bypass API is a free project, and it's because of your support that we can stay up and running. If you find this project useful, please consider [making a donation](https://www.paypal.com/donate/?hosted_button_id=QY4PCGA8FMCC4). Your contribution will help us pay for the Apple Developer license, maintain the project, and continue to develop new features. We appreciate your generosity!
+For any questions or issues regarding the App usage please visit our [support](SUPPORT.md) page.
