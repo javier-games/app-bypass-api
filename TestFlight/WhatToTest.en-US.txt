@@ -1,8 +1,10 @@
-## 1.4.0 (2023-07-06)
+## 1.4.1 (2024-10-30)
 
+### Changed
 
-### Added
+* Documentation. f02ec3e
 
-* App intent for input JSON body. 8abb4ca
+### Fixed
 
+* Replaced CI dependency. ed4980f
 
