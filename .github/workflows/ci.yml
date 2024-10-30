@@ -4,17 +4,32 @@ on:
       - main
 
 jobs:
-
   trigger-xcode-cloud:
     name: Set Project Version to Trigger Xcode Cloud
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Dependencies
-        uses: javier-games/semantic-version-common-dependencies@v1.1
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.8.1'
+
+      - name: Install apt Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-suggests --no-install-recommends jq
+
+      - name: Install npm Dependencies
+        run: |
+          # Install the latest version of semantic-release and plugins to avoid conflicts
+          npm install semantic-release@latest
+          npm install @semantic-release/changelog@latest @semantic-release/commit-analyzer@latest
+          npm install @semantic-release/release-notes-generator@latest @semantic-release/exec@latest
+          npm install @semantic-release/git@latest @semantic-release/github@latest
+          npm install conventional-changelog-conventionalcommits@latest
 
       - name: Set Version
-        run: semantic-release
+        run: npx semantic-release
