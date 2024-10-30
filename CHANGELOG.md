@@ -1,3 +1,13 @@
+## 1.4.1 (2024-10-30)
+
+### Changed
+
+* Documentation. f02ec3e
+
+### Fixed
+
+* Replaced CI dependency. ed4980f
+
 ## 1.4.0 (2023-07-06)
 
 
